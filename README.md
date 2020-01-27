@@ -3,7 +3,9 @@ The general purpose of this project is to illustrate really simple endpoints as 
 
 
 ## Dependency Management
-Pipenv is the library used to handle the dependencies as you see we have a pipfile (in _TOML_ format) and a Pipfile.lock to produce deterministic builds
+
+*Pipenv* is the library used to handle the dependencies as you see we have a pipfile (in _TOML_ format) and a Pipfile.lock to produce deterministic builds
+
 
 ### Installing dependencies
 ```
@@ -12,5 +14,11 @@ $ pipenv install
 
 ### Execute Project
 ```
-$ python main.py
+$ pipenv run python main.py
+```
+
+### Run Linter
+
+```
+$ pipenv run flake8
 ```
